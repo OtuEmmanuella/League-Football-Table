@@ -1,0 +1,381 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  background: #000814;
+}
+.section-one {
+  background: #231942;
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.inter-faculty {
+  color: #778da9;
+}
+
+.span {
+  display: block;
+  border-bottom: 2px solid #778da9;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+.welcome {
+  margin: 0;
+  padding: 0.85em 0;
+  font-size: 1.3em;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.table-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.table-head {
+  color: wheat;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+table {
+  width: 100%;
+  /* border-collapse: collapse;*/
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #f5f5f5;
+}
+
+tr {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.td-color {
+  color: #778da9;
+}
+
+tr:hover {
+  background-color: #333333;
+  color: #000814;
+}
+
+th {
+  background-color: #3d5a80;
+  color: white;
+}
+
+th,
+td {
+  padding: 1em;
+  font-size: 1em;
+}
+
+td {
+  font-size: 1em;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+#team1,
+#team2,
+#team3,
+#team4 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#league-table {
+  margin-top: 20px;
+}
+
+#league-table td:first-child {
+  text-align: left;
+}
+
+#league-table td:not(:first-child) {
+  font-weight: bold;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 1em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.live-notification {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.div-signed {
+  background: #3d5a80;
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  align-items: center;
+  padding: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.group-a-b {
+  background: #000814;
+  padding-right: 2em;
+  font-size: 2em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.group {
+  color: #10002b;
+  letter-spacing: 20px;
+  text-align: center;
+  padding: 1.5em;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.grouping {
+  background: #10002b;
+}
+
+button {
+  padding: 1em 0.2em;
+  border-radius: 10px;
+  font-weight: 900;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #000;
+}
+button:hover {
+  background: #3d5a80;
+  border: 1px solid #fff;
+}
+
+.signed {
+  margin: 0;
+  padding: 0.2em 0;
+}
+
+.pele {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-items: center;
+  align-self: center;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.logo {
+  width: 35px; /* Adjust the width as per your logo size */
+  height: auto;
+  margin-right: 10px;
+}
+
+.team-container {
+  display: flex;
+  text-align: center;
+}
+
+.team {
+  margin-right: 1.5em;
+}
+
+.team-name {
+  font-weight: bold;
+}
+
+.player-list {
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.player {
+  margin-bottom: 5px;
+}
+
+.captains {
+  margin: 0 auto;
+  text-align: center;
+  background: #0047ab;
+  padding: 0.5em;
+}
+
+.captain-heading {
+  color: #ddd;
+}
+
+.captain-list {
+  font-weight: 600;
+  color: blanchedalmond;
+}
+
+#team-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.team {
+  margin-right: 20px;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity -1 ease;
+}
+
+.animate {
+  opacity: 1;
+}
+
+.animate-on-scroll.animate {
+  animation: fade-in 1s ease forwards;
+  opacity: 0;
+}
+
+.fixtures-img {
+  display: block;
+}
+
+.fixtures > img {
+  width: 100%;
+  height: 10%;
+  border-radius: 0;
+}
+
+footer {
+  background: #000814;
+  padding: 10em 0;
+  color: #f5f5f5;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.enquries {
+  padding: 1em 0;
+}
+
+.video-two {
+  display: block;
+  margin: 0;
+  min-width: fit-content;
+  min-height: fit-content;
+  background: #000814;
+  object-fit: cover;
+}
+
+.bg {
+  background: green;
+}
+
+.bg-bottom {
+  background: red;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  video {
+    height: 200px; /* Adjust the height for smaller screens */
+  }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  /* Adjust margin for small screens */
+  body {
+    margin: 10px;
+  }
+
+  /* Center align h1 on small screens */
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  /* Reduce padding for table cells on small screens */
+  th,
+  td {
+    padding: 10px;
+  }
+
+  /* Hide team numbers on small screens */
+  #league-table td:first-child {
+    display: none;
+  }
+
+  /* Add overflow-x to table container for small screens */
+  #league-table {
+    overflow-x: auto;
+  }
+}
